@@ -7,6 +7,8 @@
     <string name="click_me">click me</string>
     <string name="touch_this_text">touch this text</string>
     <string name="touch_received">touch received</string>
-    <string name="waiting_for_animations">waiting for animations</string>
+    <string name="launch_new_activity">Launch new activity</string>
+    <string name="yay_we_got_here">yay, we got here!</string>
+    <string name="new_activity_name">New Activity</string>
 
 </resources>

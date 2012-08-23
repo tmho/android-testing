@@ -1,6 +1,7 @@
 package com.shinetech.robotium;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -27,6 +28,15 @@ public class Main extends Activity {
 			@Override
 			public void onClick(View v) {
 				example02TextView.setText(R.string.touch_received);
+			}
+		});
+		
+		final Button example03Button = (Button) findViewById(R.id.example_03_button);
+		example03Button.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(getApplicationContext(), NewActivity.class);
+				startActivity(intent, null);
 			}
 		});
 
