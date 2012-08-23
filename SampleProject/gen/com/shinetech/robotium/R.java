@@ -18,20 +18,24 @@ public final class R {
         public static final int example_01_button=0x7f060001;
         public static final int example_01_text_view=0x7f060000;
         public static final int example_02_text_view=0x7f060002;
-        public static final int example_03_text_view=0x7f060003;
+        public static final int example_03_button=0x7f060003;
+        public static final int example_03_text_view=0x7f060004;
     }
     public static final class layout {
         public static final int main=0x7f030000;
+        public static final int new_activity=0x7f030001;
     }
     public static final class string {
         public static final int after_click=0x7f040003;
         public static final int app_name=0x7f040000;
         public static final int before_click=0x7f040002;
         public static final int click_me=0x7f040004;
+        public static final int launch_new_activity=0x7f040007;
+        public static final int new_activity_name=0x7f040009;
         public static final int title_activity_main=0x7f040001;
         public static final int touch_received=0x7f040006;
         public static final int touch_this_text=0x7f040005;
-        public static final int waiting_for_animations=0x7f040007;
+        public static final int yay_we_got_here=0x7f040008;
     }
     public static final class style {
         public static final int AppTheme=0x7f050000;
