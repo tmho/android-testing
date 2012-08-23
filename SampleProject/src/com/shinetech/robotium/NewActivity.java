@@ -25,5 +25,10 @@ public class NewActivity extends Activity{
 				example04TextView.setText(example04EditText.getText().toString());
 			}
 		});
+		
+		Bundle example05Extra = getIntent().getExtras();
+		if (example05Extra != null) {
+			((TextView) findViewById(R.id.example_05_text_view)).setText(example05Extra.getString("example05")); 
+		}
 	}
 }

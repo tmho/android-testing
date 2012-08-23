@@ -42,5 +42,14 @@ public class SampleProjectTest extends ActivityInstrumentationTestCase2<Main> {
 		assertEquals(touchReceived, example02TextView.getText().toString());
 	}
 	
+	@Smoke
+	public void testExample03() {
+		//testing between multiple activities
+		final Button example03Button = (Button) solo.getCurrentActivity().findViewById(R.id.example_03_button);
+		solo.clickOnView(example03Button);
+		solo.assertCurrentActivity("should have moved into NewActivity", NewActivity.class);
+		final TextView example03TextView = (TextView) solo.getCurrentActivity().findViewById(R.id.example_03_text_view);
+		assertEquals("yay, we got here!", example03TextView.getText().toString());
+	}
 
 }
