@@ -9,8 +9,8 @@ import com.jayway.android.robotium.solo.Solo;
 
 public class NewActivityWithExtraTest extends ActivityInstrumentationTestCase2<NewActivity>{
 	private Solo solo;
-	private static final String EXTRA = "this activity has came with baggage";
-	
+	private static final String EXTRA = "this activity came with baggage";
+
 	public NewActivityWithExtraTest() {
 		super(NewActivity.class);
 	}
@@ -28,7 +28,7 @@ public class NewActivityWithExtraTest extends ActivityInstrumentationTestCase2<N
 		setActivityIntent(intent);
 		return super.getActivity();
 	}
-	
+
 	@Smoke
 	public void testExample05() {
 		TextView example05TextView = (TextView) solo.getCurrentActivity().findViewById(R.id.example_05_text_view);
