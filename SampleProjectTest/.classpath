@@ -5,6 +5,6 @@
 	<classpathentry combineaccessrules="false" kind="src" path="/SampleProject"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
 	<classpathentry kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
-	<classpathentry exported="true" kind="lib" path="/home/tim/workspace/Testing-on-Android/SampleProjectTest/lib/robotium-solo-3.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="libs/robotium-solo-3.4.1.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>
