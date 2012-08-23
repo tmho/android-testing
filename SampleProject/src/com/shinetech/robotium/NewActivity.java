@@ -26,9 +26,9 @@ public class NewActivity extends Activity{
 			}
 		});
 		
-		Bundle example05Extra = getIntent().getExtras();
-		if (example05Extra != null) {
-			((TextView) findViewById(R.id.example_05_text_view)).setText(example05Extra.getString("example05")); 
+		String extra = getIntent().getStringExtra("example05");
+		if (extra != null) {
+			((TextView) findViewById(R.id.example_05_text_view)).setText(extra); 
 		}
 	}
 }

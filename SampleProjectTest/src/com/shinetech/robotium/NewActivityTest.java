@@ -33,10 +33,4 @@ public class NewActivityTest extends ActivityInstrumentationTestCase2<NewActivit
 		solo.clickOnView(example04Button);
 		assertEquals(sampleText, example04TextView.getText().toString());
 	}
-	
-	@Smoke
-	public void testExample05() {
-		//test launching activities with extras
-		
-	}
 }
