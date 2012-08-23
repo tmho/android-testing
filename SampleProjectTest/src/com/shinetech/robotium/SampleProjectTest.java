@@ -33,7 +33,14 @@ public class SampleProjectTest extends ActivityInstrumentationTestCase2<Main> {
 	@Smoke
 	public void testExample02() {
 		//clicking a view by searching for the text
+		final String touchText = "touch this text";
+		final String touchReceived = "touch received";
 		
+		final TextView example02TextView = (TextView) getActivity().findViewById(R.id.example_02_text_view);
+		assertEquals(touchText, example02TextView.getText().toString());
+		solo.clickOnText(touchText);
+		assertEquals(touchReceived, example02TextView.getText().toString());
 	}
+	
 
 }
