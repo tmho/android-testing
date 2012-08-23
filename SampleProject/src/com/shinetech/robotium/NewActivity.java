@@ -18,7 +18,6 @@ public class NewActivity extends Activity{
 		
 		final TextView example04TextView = (TextView) findViewById(R.id.example_04_text_view);
 		final EditText example04EditText = (EditText) findViewById(R.id.example_04_edit_text);
-		
 		final Button example04Button = (Button) findViewById(R.id.example_04_button);
 		example04Button.setOnClickListener(new OnClickListener() {
 			@Override
