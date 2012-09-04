@@ -22,7 +22,7 @@ public class Main extends Activity {
 				((TextView) findViewById(R.id.example_01_text_view)).setText(R.string.after_click);
 			}
 		});
-		
+
 		final TextView example02TextView = (TextView)findViewById(R.id.example_02_text_view);
 		example02TextView.setOnClickListener(new OnClickListener() {
 			@Override
@@ -30,13 +30,13 @@ public class Main extends Activity {
 				example02TextView.setText(R.string.touch_received);
 			}
 		});
-		
+
 		final Button example03Button = (Button) findViewById(R.id.example_03_button);
 		example03Button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				Intent intent = new Intent(getApplicationContext(), NewActivity.class);
-				startActivity(intent, null);
+				startActivity(intent);
 			}
 		});
 

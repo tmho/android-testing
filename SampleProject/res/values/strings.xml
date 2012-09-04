@@ -10,5 +10,6 @@
     <string name="launch_new_activity">Launch new activity</string>
     <string name="yay_we_got_here">yay, we got here!</string>
     <string name="new_activity_name">New Activity</string>
+    <string name="click_to_fade_away">Click to animate</string>
 
 </resources>

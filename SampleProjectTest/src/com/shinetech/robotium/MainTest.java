@@ -19,7 +19,7 @@ public class MainTest extends ActivityInstrumentationTestCase2<Main> {
 		super.setUp();
 		solo = new Solo(getInstrumentation(), getActivity());
 	}
-	
+
 	@Smoke
 	public void testExample01() {
 		//clicking on a view by id
@@ -29,18 +29,18 @@ public class MainTest extends ActivityInstrumentationTestCase2<Main> {
 		solo.clickOnView(example01Button);
 		assertEquals("after click", example01TextView.getText().toString());
 	}
-	
+
 	@Smoke
 	public void testExample02() {
 		//clicking a view by searching for the text
 		final String touchText = "touch this text";
-		final String touchReceived = "touch received";		
+		final String touchReceived = "touch received";
 		final TextView example02TextView = (TextView) solo.getCurrentActivity().findViewById(R.id.example_02_text_view);
 		assertEquals(touchText, example02TextView.getText().toString());
 		solo.clickOnText(touchText);
 		assertEquals(touchReceived, example02TextView.getText().toString());
 	}
-	
+
 	@Smoke
 	public void testExample03() {
 		//testing between multiple activities
